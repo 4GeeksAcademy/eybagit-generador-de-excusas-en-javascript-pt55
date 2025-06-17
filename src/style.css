@@ -1,5 +1,19 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+/* Fondo y configuración general del body */
+body {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-body{
-    background: white;
+/* Estilo para el título con degradado */
+h1 {
+  color:black;
+
+  font-size: 2.5rem;
+  text-align: center;
 }
