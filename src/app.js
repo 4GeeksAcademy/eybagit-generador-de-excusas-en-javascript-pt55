@@ -1,12 +1,12 @@
 
 
-function getRandom(anyArray) {
+function getRandomElement(anyArray) {
   return anyArray[Math.floor(Math.random() * anyArray.length)];
 }
 
-// Al cargar la ventana, se selecciona el elemento con ID "excuse" y se le asigna una excusa aleatoria
+// When the window loads, the item with ID "excuse" is selected and assigned a random excuse.
 window.onload = function () {
-  // Definición de arrays con partes de la excusa
+ 
   let who = ['The dog', 'My grandma', 'The mailman', 'My bird', 'Bobby'];
   let action = ['ate', 'peed', 'crushed', 'broke'];
   let what = ['my homework', 'my phone', 'the car'];
@@ -14,5 +14,5 @@ window.onload = function () {
 
   const excuseElement = document.querySelector('#excuse');
   console.log("Hello Rigo from the console!");
-  excuseElement.innerHTML = `<h1>${getRandom(who)} ${getRandom(action)} ${getRandom(what)} ${getRandom(when)}</h1>`;
+  excuseElement.innerHTML = `<h1>${getRandomElement(who)} ${getRandomElement(action)} ${getRandomElement(what)} ${getRandomElement(when)}</h1>`;
 };
